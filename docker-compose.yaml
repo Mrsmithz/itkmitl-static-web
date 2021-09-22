@@ -1,0 +1,6 @@
+services:
+  web:
+    build: .
+    image: ghcr.io/mrsmithz/itkmitl-static-web:dev
+    ports:
+      - 8080:80
