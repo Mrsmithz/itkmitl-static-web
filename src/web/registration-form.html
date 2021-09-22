@@ -1,0 +1,441 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Global Talent House - hub for creative minds</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Vrinda Maru Kansal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+    <!-- Favicone Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/favicon.png">
+
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="css/ionicons.css" rel="stylesheet" type="text/css" />
+    <link href="css/plugin/animate.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <section id="preloader">
+        <div class="loader" id="loader">
+            <div class="loader-img"></div>
+        </div>
+    </section>
+    <!-- End Preloader -->
+
+    <!-- Search Overlay Menu -->
+    <div class="search-overlay-menu">
+        <span class="search-overlay-close"><i class="ion ion-ios-close-empty"></i></span>
+        <form role="search" id="searchform" action="/search" method="get">
+            <input value="" name="q" type="search" placeholder="Search..." />
+            <button type="submit"><i class="ion ion-ios-search"></i></button>
+        </form>
+    </div>
+    <!-- End Search Overlay Menu -->
+
+        <!-- Site Wraper -->
+    <div class="wrapper">
+
+              <!-- Header -->
+        <header id="header" class="header shadow">
+            <div class="header-inner">
+
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <img class="logo-light" src="img/gth-logo-white.png" alt="Global Talent House" />
+                        <img class="logo-dark" src="img/gth-logo-black.png" alt="Global Talent House" />
+                    </a>
+                </div>
+                <!-- End Logo -->
+
+                <!-- Rightside Menu (Search icon) -->
+                <div class="side-menu-btn">
+                    <ul>
+                        <!-- Search Icon -->
+                        <li class="">
+                            <a class="search-overlay-menu-btn header-icon"><i class="fa fa-search"></i></a>
+                        </li>
+                        <!-- End Search Icon -->
+                    </ul>
+                </div>
+                <!-- End Rightside Menu -->
+
+                <!-- Mobile Navbar Icon -->
+                <div class="nav-mobile nav-bar-icon">
+                    <span></span>
+                </div>
+                <!-- End Mobile Navbar Icon -->
+
+                <!-- Navbar Navigation -->
+                <div class="nav-menu">
+                    <ul class="nav-menu-inner">
+                        <li>
+                            <a class="" href="home.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="" href="about-us.html">About Us</a>                         
+                        </li>
+                        <li>
+                            <a class="menu-has-sub">Artists <i class="fa fa-angle-down"></i></a>
+							<!-- Dropdown -->
+                            <ul class="sub-dropdown dropdown">
+								<li>
+                                    <a href="artist-directory.html">Artist Directory</a>
+                                </li>
+                                <li>
+                                    <a href="institutes-directory.html">Training Institutes</a>
+                                </li>
+                            </ul>
+                            <!-- End Dropdown -->
+                        </li>
+                        <li>
+                            <a class="menu-has-sub">Events <i class="fa fa-angle-down"></i></a>
+							<!-- Dropdown -->
+                            <ul class="sub-dropdown dropdown">
+								<li>
+                                    <a href="upcoming-competitions.html">Competitions & Auditions</a>
+                                </li>
+                                <li>
+                                    <a href="events-calendar.html">Events Calendar</a>
+                                </li>
+								<li>
+                                    <a href="past-events.html">Past Events Gallery</a>
+                                </li>
+                            </ul>
+                            <!-- End Dropdown -->
+                        </li>
+                        <li>
+                            <a class="" href="contact-us.html">Contact Us</a>
+                        </li>
+                        <li>
+                            <a class="" href="login.html">Sign In</a>                            
+                        </li>
+						<li>
+                            <a class="btn btn-md btn-black join-btn" href="join-gth.html">Join GTH</a>                            
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Navbar Navigation -->
+
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- CONTENT --------------------------------------------------------------------------------->
+        <!-- Intro Section -->
+        <section class="inner-intro dark-bg overlay-dark">
+            <div class="container">
+                <div class="row title">
+                    <h2 class="h2">Create Your Profile</h2>
+					<p><span class="btn btn-md btn-white-line">1. About You</span>--
+					<span class="btn btn-md btn-white-line">2. Your Work</span>--
+					<span class="btn btn-md btn-white-line">&nbsp;3. Your CV&nbsp;</span></p>
+					<div class="spacer-15"></div>
+                    <div class="page-breadcrumb">
+                        <a href="index.html">Home</a>/<span>Create Profile</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Intro Section -->
+
+        <!-- Contact Section -->
+        <section class="ptb-60 ptb-sm-30">
+            <div class="container">
+				<!-- Contact FORM -->
+				<form class="registration-form" id="registration" role="form">
+
+					<!-- IF MAIL SENT SUCCESSFULLY -->
+					<h6 class="successContent">
+						<i class="fa fa-check left" style="color: #5cb45d;"></i>Registration Successful. Welcome to Global Talent House.
+					</h6>
+					<!-- END IF MAIL SENT SUCCESSFULLY -->
+
+					<!-- MAIL SENDING UNSUCCESSFULL -->
+					<h6 class="errorContent">
+						<i class="fa fa-exclamation-circle left" style="color: #e1534f;"></i>There was a problem validating the form please check!
+					</h6>
+					<!-- END MAIL SENDING UNSUCCESSFULL -->
+					<div class="accordion">
+						<div class="accordion-section active">
+						
+						<h6 class="accordion-title">About You</h6>
+							<div class="accordion-content">
+								<div class="row">
+								<div class="form-field-wrapper col-sm-6 ">
+									<input class="input-sm form-full" id="form-photo" type="file" name="form-photo" required>
+								</div>
+								</div>
+								<div class="row">
+								<div class="form-field-wrapper col-sm-6 ">
+									<input class="input-sm form-full" id="form-first-name" type="text" name="form-first-name" placeholder="First Name*" required>
+								</div>							
+								<div class="form-field-wrapper col-sm-6">
+									<input class="input-sm form-full" id="form-last-name" type="text" name="form-last-name" placeholder="Last Name*" required>
+								</div>			
+								</div>
+								<div class="row">
+								<div class="form-field-wrapper col-sm-6">
+									<input class="input-sm form-full" id="form-email" type="email" name="form-email" placeholder="Email*" required>
+								</div>							
+								<div class="form-field-wrapper col-sm-6">
+									<input class="input-sm form-full" id="form-password" type="password" name="form-password" placeholder="Password*" required>
+								</div>	
+								</div>
+								<div class="row">
+								<div class="form-field-wrapper col-sm-12">
+									<input class="input-sm form-full" id="form-tagline" type="text" name="form-tagline" placeholder="Tagline*" required>
+								</div>
+								</div>
+								<div class="row">
+								<div class="form-field-wrapper col-sm-6">
+									<input class="input-sm form-full" id="form-website" type="text" name="form-website" placeholder="Website">
+								</div>
+								<div class="form-field-wrapper col-sm-6">
+									<input class="input-sm form-full" id="form-contact" type="number" name="form-contact" placeholder="Contact Number" required>
+								</div>
+								</div>
+								<hr>									
+								<h6 class="mtb-15">Where are you based?</h6>
+								<div class="row">
+								<div class="form-field-wrapper col-sm-6">
+									<select name="slist" id="form-slist" class="input-sm form-full">
+									<option value="">------------Select State------------</option>
+									<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+									<option value="Andhra Pradesh">Andhra Pradesh</option>
+									<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+									<option value="Assam">Assam</option>
+									<option value="Bihar">Bihar</option>
+									<option value="Chandigarh">Chandigarh</option>
+									<option value="Chhattisgarh">Chhattisgarh</option>
+									<option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+									<option value="Daman and Diu">Daman and Diu</option>
+									<option value="Delhi">Delhi</option>
+									<option value="Goa">Goa</option>
+									<option value="Gujarat">Gujarat</option>
+									<option value="Haryana">Haryana</option>
+									<option value="Himachal Pradesh">Himachal Pradesh</option>
+									<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+									<option value="Jharkhand">Jharkhand</option>
+									<option value="Karnataka">Karnataka</option>
+									<option value="Kerala">Kerala</option>
+									<option value="Lakshadweep">Lakshadweep</option>
+									<option value="Madhya Pradesh">Madhya Pradesh</option>
+									<option value="Maharashtra">Maharashtra</option>
+									<option value="Manipur">Manipur</option>
+									<option value="Meghalaya">Meghalaya</option>
+									<option value="Mizoram">Mizoram</option>
+									<option value="Nagaland">Nagaland</option>
+									<option value="Orissa">Orissa</option>
+									<option value="Pondicherry">Pondicherry</option>
+									<option value="Punjab">Punjab</option>
+									<option value="Rajasthan">Rajasthan</option>
+									<option value="Sikkim">Sikkim</option>
+									<option value="Tamil Nadu">Tamil Nadu</option>
+									<option value="Tripura">Tripura</option>
+									<option value="Uttaranchal">Uttaranchal</option>
+									<option value="Uttar Pradesh">Uttar Pradesh</option>
+									<option value="West Bengal">West Bengal</option>
+									</select>
+								</div>
+								<div class="form-field-wrapper col-sm-6">
+									<input class="input-sm form-full" id="form-city" type="text" name="form-city" placeholder="City" required>
+								</div>
+								</div>
+								<hr>
+								<h6 class="mtb-15">I AM...</h6>
+								<div class="row">
+								<div class="form-field-wrapper col-sm-12">
+									<select class="input-sm form-full" multiple="multiple" size="10" id="form-category" name="category" required>
+									<option value="option1">Option 1</option>
+									<option value="option2">Option 2</option>
+									<option value="option3" selected="selected">Option 3</option>
+									<option value="option4">Option 4</option>
+									<option value="option5">Option 5</option>
+									<option value="option6" selected="selected">Option 6</option>
+									<option value="option7">Option 7</option>
+									<option value="option8">Option 8</option>
+									<option value="option9">Option 9</option>
+									<option value="option0">Option 10</option>
+									</select>
+								</div>
+								</div>
+								<h6>Applicable only for models</h6>
+								<div class="row">
+								<div class="form-field-wrapper col-sm-4">
+									<input class="input-sm form-full" id="form-height" type="number" name="form-height" placeholder="Height" required>
+								</div>
+								<div class="form-field-wrapper col-sm-4">
+									<input class="input-sm form-full" id="form-weight" type="number" name="form-weight" placeholder="Weight" required>
+								</div>
+								<div class="form-field-wrapper col-sm-4">
+									<input class="input-sm form-full" id="form-stats" type="text" name="form-stats" placeholder="Statistics" required>
+								</div>
+								</div>
+								<a href="#section-2" class="btn btn-md btn-black" name="form-about-submit" 
+								onclick="getElementById('section-2').click();">Next- Your Work <i class="fa fa-arrow-right"></i></a>
+							</div>
+						</div><!--section 1-->
+						<div class="accordion-section">
+							<h6  id="section-2" class="accordion-title">Upload Your Work</h6>
+							<div class="accordion-content">
+								<p>Use the following form to give us the best example of your work and provide with atleast one image, 
+								document, video or audio. This will help visitors accurately access your work.</p>
+								<div class="control-group row" id="fields">
+									<div class="controls col-sm-8">                 
+										<div class="entry mt-30 mb-15">
+											<div class="form-field-wrapper">
+												<input class="input-sm form-full" id="form-work-title" type="text" name="form-work-title" placeholder="Title*" required>
+											</div>	
+											<div class="form-field-wrapper">
+												<input class="input-sm form-full" id="form-work-date" type="text" name="form-work-date" placeholder="Release Date">
+											</div>
+											
+											<div class="form-field-wrapper">
+												<textarea class="inout-sm form-full" id="form-desc" rows="10" name="form-desc" placeholder="Description of your work*" required></textarea>
+											</div>
+											<div class="form-field-wrapper">
+												<h6>Choose Media Type</h6>
+												<select class="input-sm form-full" id="form-media-type" name="media-type" required>
+												<option value="audio">Audio</option>
+												<option value="video">Video</option>
+												<option value="image">Image</option>
+												<option value="image">Document</option>
+												</select>
+											</div>
+											<div class="form-field-wrapper">
+												<button class="btn btn-success btn-add btn-md btn-black" type="button">
+													Add New Work <span class="fa fa-plus"></span>
+												</button>
+											</div>
+										</div>
+									<hr>
+									</div>
+								</div>	
+								<a href="#section-2" class="btn btn-md btn-black mt-30" name="form-work-submit" 
+								onclick="getElementById('section-3').click();">Next- Your CV <i class="fa fa-arrow-right"></i></a>
+						
+							</div>
+						</div>	<!--end section-2-->
+						<div class="accordion-section">
+							<h6  id="section-3" class="accordion-title">Your CV</h6>
+							<div class="accordion-content">									
+								<div class="form-field-wrapper">
+									<textarea class="form-full" id="form-message" rows="10" name="form-message" placeholder="Describe your skills and career (max 5000 characters)" required></textarea>
+								</div>
+								<div class="form-field-wrapper">
+									<h6>Upload Your CV</h6>
+									<input class="input-sm form-full" id="form-cv" type="file" name="form-cv">
+								</div>
+							</div>
+						</div><!--end section-3-->	
+					</div><!-- end accordian-->
+				<div class="form-field-wrapper mt-30 text-right">
+				<a class="btn btn-md">Save for later</a>
+				<button class="btn btn-md btn-black" type="submit" id="form-submit" name="submit">Create Profile</button>
+				</div>
+				</form>
+				<!-- END Contact FORM --> 
+            </div>
+			
+        </section>
+        <!-- Contact Section -->
+		<section>
+			
+		</section>
+        <!-- End CONTENT ------------------------------------------------------------------------------>
+
+           <!-- FOOTER -->
+        <footer class="footer pt-60">
+            <div class="container">
+                <!--Footer Info -->
+                <div class="row footer-info mb-30">
+                    <div class="col-md-6 col-sm-12 col-xs-12 mb-sm-30 text-sm-left">
+                        <p class="mb-xs-0">Our ante tincidunt tempus, Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros.</p>
+                        <ul class="link-small">
+                            <li><a href="mailto:yourname@domain.com"><i class="fa fa-envelope-o left"></i>yourname@domain.com</a></li>
+                            <li><a><i class="fa fa-phone left"></i>+40 (0) 012 345 6789</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12 text-right text-sm-left">
+                        <ul class="link">
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="terms-and-conditions.html">T&C</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="contact-us.html">Contact</a></li>
+                        </ul>
+						<div class="spacer-30"></div>
+						<ul class="social">
+                            <li><a target="_blank" href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                            <li><a target="_blank" href="https://instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                            <li><a target="_blank" href="https://youtube.com/"><i class="fa fa-youtube"></i></a></li>
+                            <li><a target="_blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Footer Info -->
+            </div>
+
+            <hr />
+
+            <!-- Copyright Bar -->
+            <section class="copyright ptb-15">
+                <div class="container">
+					<div class="row">
+						<div class="col-sm-6 text-left text-sm-left">© 2016 <a href="index.html"><b>Global Talent House</b></a>. All Rights Reserved.</div>
+                        <div class="col-sm-6 text-right text-sm-left">Website  by <a target="_blank" href="http://vrinmkansal.com/"><b>Vrinda Maru Kansal</b></a></div>
+					</div>
+                </div>
+            </section>
+            <!-- End Copyright Bar -->
+
+        </footer>
+        <!-- END FOOTER -->
+
+        <!-- Scroll Top -->
+        <a class="scroll-top">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+        <!-- End Scroll Top -->
+
+    </div>
+    <!-- Site Wraper End -->
+
+
+    <!-- JS -->
+
+    <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/plugin/jquery.easing.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/plugin/jquery.flexslider.js" type="text/javascript"></script>
+    <script src="js/plugin/jquery.fitvids.js" type="text/javascript"></script>
+    <script src="js/plugin/jquery.viewportchecker.js" type="text/javascript"></script>
+    <script src="js/plugin/jquery.stellar.min.js" type="text/javascript"></script>
+    <script src="js/plugin/wow.min.js" type="text/javascript"></script>
+    <script src="js/plugin/jquery.colorbox-min.js" type="text/javascript"></script>
+    <script src="js/plugin/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="js/plugin/isotope.pkgd.min.js" type="text/javascript"></script>
+    <script src="js/plugin/masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="js/plugin/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+    <script src="js/plugin/jquery.fs.tipper.min.js" type="text/javascript"></script>
+    <script src="js/plugin/mediaelement-and-player.min.js"></script>
+    <script src="js/plugin/sidebar-menu.js" type="text/javascript"></script>
+    <script src="js/theme.js" type="text/javascript"></script>
+    <script src="js/navigation.js" type="text/javascript"></script>
+	<script src="js/jquery.bootstrap-duallistbox.js"></script>
+	<script>var demo1 = $('[name=category]').bootstrapDualListbox();</script>
+</body>
+</html>
